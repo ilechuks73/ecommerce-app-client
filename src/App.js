@@ -6,8 +6,10 @@ import Home from "./components/Home/Home";
 import About from "./components/About";
 import Product from "./components/Product";
 import Error from "./components/Error";
+import Cart from "./components/Cart";
+import Auth from "./components/Auth"
 //navbar
-import Navbar from "./components/Navbar";
+import Navbar from "./components/Navbar/Navbar";
 
 function App() {
   return (
@@ -24,6 +26,12 @@ function App() {
           </Route>
           <Route path="/product">
             <Product />
+          </Route>
+          <Route exact path="/cart">
+            <Cart/>
+          </Route>
+          <Route exact path="/auth">
+            <Auth/>
           </Route>
           <Route path="/product/:id" children={<Product />}></Route>
           <Route path="*">
