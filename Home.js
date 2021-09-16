@@ -1,15 +1,18 @@
 import "./Home.css";
 
-import picOne from "./assets/pic.jpg";
+import picOne from "./assets/pic1.jpg";
+import picTwo from "./assets/pic2.jpg";
 
 const Home = () => {
   return (
     <div>
       <div className="wrapper">
         <div className="slideShow">Slide show</div>
-        <div className="heroOne">
-          <p>hero section</p>
-          <img src={picOne} alt="something" />
+        <div className="fashionpics">
+         <h3>Fashion section</h3>
+          <img src={picOne} alt="fashion" />
+          <img src={picTwo} alt="man1" />
+          
         </div>
         <div className="filler"></div>
         <div className="heroTwo">second hero section</div>
